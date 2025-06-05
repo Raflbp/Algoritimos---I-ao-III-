@@ -29,9 +29,7 @@ O conteúdo abrange desde os conceitos básicos de algoritmos até tópicos mais
 - Algoritmos de ordenação e busca
 - Análise de complexidade
 
-## 🗂 Estrutura do Repositório
-
-📬 Contato
+#### 📬 Contato
 
 GitHub: @Raflbp
 Email: Rafaelrbd.bruno@gmail.com
