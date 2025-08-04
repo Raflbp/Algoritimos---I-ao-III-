@@ -31,5 +31,5 @@ O conteúdo abrange desde os conceitos básicos de algoritmos até tópicos mais
 
 #### 📬 Contato
 
-GitHub: @Raflbp
+GitHub: @Raflbp  
 Email: Rafaelrbd.bruno@gmail.com
