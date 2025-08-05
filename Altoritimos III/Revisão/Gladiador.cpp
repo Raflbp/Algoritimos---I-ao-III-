@@ -40,34 +40,27 @@ int main() {
 	int glad1, glad2;
 	cin >> glad1 >> glad2;
 
+	while (glad1 != -1 && glad2 != -1)
+	{
+
 	while (estaVivo(glad1, dados) && estaVivo(glad2, dados)) {
-		dano(glad1, glad2, dados); // glad1 ataca glad2
-		if (!estaVivo(glad2, dados)) break;
+			dano(glad1, glad2, dados); // glad1 ataca glad2
+			if (!estaVivo(glad2, dados)) break;
 
-		dano(glad2, glad1, dados); // glad2 ataca glad1
-	}
+			dano(glad2, glad1, dados); // glad2 ataca glad1
+		}
+	
+		if (estaVivo(glad1, dados)) {
+			cout << dados[glad1].Nome << " ganhou a batalha contra" << dados[glad2].Nome<< endl;
+		} else {
+			cout << dados[glad2].Nome << " ganhou a batalha contra" << dados[glad1].Nome<< endl;
+		}
 
-	int glad3, glad4;
-	cin >> glad3 >> glad4;
-
-	while (estaVivo(glad3, dados) && estaVivo(glad4, dados)) {
-		dano(glad3, glad4, dados); // glad1 ataca glad2
-		if (!estaVivo(glad4, dados)) break;
-
-		dano(glad3, glad4, dados); // glad2 ataca glad1
+		cin >> glad1 >> glad2;
+	
 	}
 	
-	if (estaVivo(glad1, dados)) {
-		cout << dados[glad1].Nome << " ganhou a batalha contra" << dados[glad2].Nome<< endl;
-	} else {
-		cout << dados[glad2].Nome << " ganhou a batalha contra" << dados[glad1].Nome<< endl;
-	}
 
-	if (estaVivo(glad3, dados)) {
-		cout << dados[glad3].Nome << " ganhou a batalha contra " << dados[glad4].Nome << endl;
-	} else {
-		cout << dados[glad4].Nome << " vganhou a batalha contra " << dados[glad3].Nome << endl;
-	}
 	
 	return 0;
 }
